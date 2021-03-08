@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    position: absolute;
+    z-index: 1;
+    top:30%;
+    animation: textAnimation 5s;
+}
+
+.text{ 
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 700;
+}
+
+@keyframes textAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
